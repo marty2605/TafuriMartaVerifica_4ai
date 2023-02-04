@@ -22,9 +22,9 @@ public class TafuriMartaClass {
 	 * @return r moltiplicazione di fattori
 	 */
 	public int TafuriMet(int s,int f) {
-		int r=0;
-		for(int i=1;i<f;i++) {
-			r=r+r;
+		int r=0;	//ERRORE: int r=1
+		for(int i=1;i<f;i++) {	//ERRORE: for(int i=s;i<=f;i++)
+			r=r+r;	//ERRORE: r=r*i;
 		}
 		return r;
 	}
